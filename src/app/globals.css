@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-primary: "Inter", "Segoe UI", Arial, sans-serif;
+  --color-primary: #2563EB;
+  --color-dark: #0B1530;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0B1530; }
+::-webkit-scrollbar-thumb { background: #2563EB; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #1D4ED8; }
+
+/* ── Global base ── */
+* { box-sizing: border-box; }
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+  background-color: #0B1530;
+  color: #ffffff;
+}
+
+body {
+  min-height: 100%;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 1.55;
+  background-color: #0B1530;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

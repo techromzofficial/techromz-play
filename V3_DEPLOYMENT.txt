@@ -1,0 +1,28 @@
+Techromz Play Standalone - V3 deployment package
+
+Includes the original Techromz Institute header/footer, logos and official navigation.
+Application code and dependencies retain their existing package versions; V3 identifies this deployment archive.
+
+Requirements: Node.js 20.x or 22.x and npm.
+
+1. Back up your current deployment and keep its environment variables.
+2. Upload and extract this ZIP into your Node.js application root.
+   package.json, src/ and public/ should be directly in that root.
+3. Set NEXT_PUBLIC_APP_URL to your real HTTPS Play domain BEFORE building.
+   Keep your existing production settings; .env.example is a template only.
+4. Run:
+   npm ci --include=dev
+   npm run build
+   npm run start
+5. Use your hosting panel or existing process manager to restart the application.
+   Keep the hosting provider's PORT value. The start command honors PORT.
+6. Check /, /ai-master, /retail-rush, /app-builder, /app-builder/level-1 and /api/health.
+
+This is a source deployment archive. node_modules, Windows build output (.next),
+private environment files and credentials are intentionally excluded.
+Dependencies and the production bundle must be built on the target server.
+
+Validation before packaging: production build passed; TypeScript passed;
+37 existing tests passed; HTTP smoke checks passed. Browser visual and interaction
+checks were unavailable. Two pre-existing React Hook warnings remain in game code.
+See DEPLOYMENT_GUIDE.md for Hostinger and VPS instructions.

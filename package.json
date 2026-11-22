@@ -1,0 +1,43 @@
+{
+  "name": "techromz-play-standalone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Techromz Play — Standalone Educational Gaming Platform",
+  "engines": {
+    "node": ">=20.0.0 <25"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.383.0",
+    "next": "15.5.29",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.4.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20.14.0",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@types/three": "^0.170.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "15.5.29",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.0",
+    "vitest": "^1.6.0"
+  }
+}

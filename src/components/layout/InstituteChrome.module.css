@@ -1,0 +1,10 @@
+.chrome {
+  font-family: "Manrope", "Inter", "Segoe UI", Arial, sans-serif;
+}
+.chrome h2 {
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+}
+.chrome p, .chrome li {
+  line-height: 1.6;
+}

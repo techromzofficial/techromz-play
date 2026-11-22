@@ -1,0 +1,51 @@
+# Dependencies and Next.js output
+node_modules/
+.next/
+out/
+
+# Local environment files (safe public template retained)
+.env
+.env.*
+!.env.example
+
+# Test, coverage, screenshots, and temporary review artifacts
+coverage/
+screenshots/
+test-results/
+playwright-report/
+src/app/score-card-samples/
+src/app/_score-card-samples/
+src/app/retail-review/
+src/app/app-builder-review/
+
+# Tool and build caches
+.cache/
+.turbo/
+*.tsbuildinfo
+
+# Local packages and deployment archives
+*.zip
+*.tar
+*.tar.gz
+
+# Logs and editor/OS files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+.idea/
+.vscode/
+
+# Credential and key material
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+credentials.json
+service-account*.json
+secrets.*
+*.secret
